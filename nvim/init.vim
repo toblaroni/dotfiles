@@ -40,14 +40,15 @@ Plug 'smallwat3r/vim-mono-sw'
 Plug 'lurst/austere.vim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
-
+Plug 'https://github.com/andreasvc/vim-256noir'
+Plug 'ntk148v/komau.vim' " Vim-plug
 
 call plug#end()
 
-:colorscheme mountaineer
 
 " Key mappings
 :let mapleader = "\<Space>"
+:set mouse
 
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-t> :TagbarToggle<CR>
@@ -80,6 +81,9 @@ let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', 
 " uulet g:zenbones_solid_line_nr = v:true
 " uulet g:zenbones_darken_comments = 45
 " uulet g:zenbones_italic_comments = v:false
+
+let g:zenbones_combat = 1
+:colorscheme sunbather
 
 lua << END
 require('lualine').setup {
