@@ -1,3 +1,5 @@
+
+
 :set autoindent
 :set tabstop=4
 :set shiftwidth=4
@@ -12,6 +14,7 @@
 :set nu
 :set rnu
 :set nowrap
+:set mouse=a
 
 :set termguicolors
 :set background=dark
@@ -42,14 +45,17 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'https://github.com/andreasvc/vim-256noir'
 Plug 'ntk148v/komau.vim' " Vim-plug
+Plug 'xiyaowong/transparent.nvim'
 
 call plug#end()
 
+:let g:transparent_enabled=v:true
 
 " Key mappings
 :let mapleader = "\<Space>"
 :set mouse
-
+ 
+nnoremap <leader>t :TransparentToggle<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
 nnoremap <C-t> :TagbarToggle<CR>
 nnoremap <C-d> <C-d>zz
