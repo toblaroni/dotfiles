@@ -37,7 +37,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'dense-analysis/ale'
 Plug 'kvrohit/mellow.nvim'
 Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.1' }
+Plug 'nvim-telescope/telescope.nvim'
 Plug 'lifepillar/vim-wwdc16-theme'
 Plug 'smallwat3r/vim-mono-sw'
 Plug 'lurst/austere.vim'
@@ -46,6 +46,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'https://github.com/andreasvc/vim-256noir'
 Plug 'ntk148v/komau.vim' " Vim-plug
 Plug 'xiyaowong/transparent.nvim'
+Plug 'tpope/vim-surround'
 
 call plug#end()
 
