@@ -1,11 +1,9 @@
-
-
 :set autoindent
-:set tabstop=4
-:set shiftwidth=4
+:set tabstop=3
+:set shiftwidth=3
 :set expandtab
 :set smarttab
-:set softtabstop=4
+:set softtabstop=3
 :set incsearch
 :set ignorecase
 :set smartcase
@@ -47,6 +45,7 @@ Plug 'https://github.com/andreasvc/vim-256noir'
 Plug 'ntk148v/komau.vim' " Vim-plug
 Plug 'xiyaowong/transparent.nvim'
 Plug 'tpope/vim-surround'
+Plug 'https://github.com/EdenEast/nightfox.nvim'
 
 call plug#end()
 
@@ -90,7 +89,7 @@ let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', 
 " uulet g:zenbones_italic_comments = v:false
 
 let g:zenbones_combat = 1
-:colorscheme sunbather
+:colorscheme oceanic_material
 
 lua << END
 require('lualine').setup {
