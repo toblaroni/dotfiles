@@ -46,14 +46,23 @@ Plug 'ntk148v/komau.vim' " Vim-plug
 Plug 'xiyaowong/transparent.nvim'
 Plug 'tpope/vim-surround'
 Plug 'https://github.com/EdenEast/nightfox.nvim'
+Plug 'voldikss/vim-floaterm'
 
 call plug#end()
 
-:let g:transparent_enabled=v:true
+let g:transparent_enabled=v:true
+
 
 " Key mappings
-:let mapleader = "\<Space>"
-:set mouse
+let mapleader = "\<Space>"
+set mouse
+
+" Float terminal toggle
+nmap <silent> <leader>n <C-\><C-n>:FloatermToggle<CR>
+tnoremap <Esc> <C-\><C-n>
+let g:floaterm_opener='vsplit'
+let g:floaterm_height=0.8
+let g:floaterm_width=0.8
  
 nnoremap <leader>t :TransparentToggle<CR>
 nnoremap <C-e> :NERDTreeToggle<CR>
@@ -89,7 +98,7 @@ let NERDTreeIgnore=['\.git$', '\.jpg$', '\.mp4$', '\.ogg$', '\.iso$', '\.pdf$', 
 " uulet g:zenbones_italic_comments = v:false
 
 let g:zenbones_combat = 1
-:colorscheme oceanic_material
+:colorscheme terafox
 
 lua << END
 require('lualine').setup {
